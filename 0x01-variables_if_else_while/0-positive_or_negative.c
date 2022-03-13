@@ -1,17 +1,30 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 
 /**
-* main - Entry point
+*main - Prints if number is positive, zero or negative
 *
-* Return: Always 0 (Success)
+* Return: Always (Success)
 */
-
 int main(void)
 {
-	printf("Size of a char: %d byte(s)\n", sizeof(char));
-	printf("Size of an int: %d byte(s)\n", sizeof(int));
-	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
-	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
-	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	int n;
+
+	srand(time(0));
+        n = rand() - RAND_MAX / 2;
+
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		print("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
+
 	return (0);
-}

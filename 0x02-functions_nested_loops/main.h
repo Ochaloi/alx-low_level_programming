@@ -1,2 +1,2 @@
 int _putchar(char);
-void int _islower(int c);
+int _islower(int c);

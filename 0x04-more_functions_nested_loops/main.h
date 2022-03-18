@@ -1,1 +1,1 @@
-#ifndef MAIN_FILE
+int _putchar(char c);
